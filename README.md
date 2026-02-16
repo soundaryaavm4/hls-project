@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+Portable Log Analyser in Isolated System
 
-## Project info
+Project Description
+      
+      The Portable Log Analyser in Isolated System is a web-based application designed to analyze system and application log files in environments with limited or no internet connectivity.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+    The project enables users to upload and inspect log data locally, helping in identifying errors, patterns, and important events without relying on external servers or cloud-based tools. This makes it suitable for secure, offline, or air-gapped systems.
 
-## How can I edit this code?
+    This project is developed as part of a **Final Year academic project**.
 
-There are several ways of editing your application.
+Key Features
 
-**Use Lovable**
+    - Offline log analysis support
+    - Portable and lightweight web-based interface
+    - Log file upload and parsing
+    - Structured and readable log visualization
+    - User-friendly dashboard
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Technologies Used
+    
+    - React (TypeScript)
+    - Vite
+    - Tailwind CSS
+    - shadcn/ui
+    - HTML & CSS
 
-Changes made via Lovable will be committed automatically to this repo.
+Project Setup & Run Instructions
 
-**Use your preferred IDE**
+Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+    - Node.js (v18 or above)
+    - npm
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+  Steps to Run Locally
+    
+    ```bash
+      npm install
+      npm run dev
+    ````
 
-Follow these steps:
+  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    Build for Production
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+    ```bash
+      npm run build
+    ```
+ Deployment
 
-# Step 3: Install the necessary dependencies.
-npm i
+    The project can be deployed using:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+    * Vercel
+    * GitHub Pages
 
-**Edit a file directly in GitHub**
+ Applications
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+    * Log analysis in isolated or secure environments
+    * Debugging systems without internet access
+    * Educational and academic demonstrations
+    * Lightweight SOC-style log inspection
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
