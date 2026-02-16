@@ -13,6 +13,7 @@ import Reports from "@/pages/Reports";
 import SettingsPage from "@/pages/Settings";
 import Help from "@/pages/Help";
 import NotFound from "./pages/NotFound";
+import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 
@@ -36,16 +37,24 @@ function AuthenticatedApp() {
   );
 }
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <AppProvider>
-        <AuthenticatedApp />
-      </AppProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  useEffect(() => {
+    document.title = "Portable Log Analyser in Isolated System";
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <AppProvider>
+          <AuthenticatedApp />
+        </AppProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
+
+export default App;
 
 export default App;
